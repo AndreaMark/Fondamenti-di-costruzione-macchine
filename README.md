@@ -4,6 +4,7 @@ industriale "Fondamenti di costruzione macchine" tenute dal prof. ing. Pierluigi
 Nella repository ci sono due cartelle: 
 - PDF: per i soli PDF degli appunti
 - TEX: per i file sorgenti di questi appunti
+- Le cartelle DSV, FATICA, SUPPORTI, contengono i respettivi argomenti "riassunti" ma in formato .tex, per il PDF cerccare nella certella PDF. 
 
 Purtroppo per mancanza di tempo mancano le parti 12, 13 ,14, 15. 
 Chiunque abbia voglia di collaborare per migliorare, sistemare e rendere più completi questi appunti, è ben accetto e gradito. 
