@@ -1,0 +1,77 @@
+\documentclass[a4paper, 15pt]{article}
+\usepackage[left=0.85in, right=0.85in, top=0.5in, bottom=0.95in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+
+% Formattazione del testo
+\usepackage{setspace}         % Setting dello spazio\begin{spacing}{0.95}
+	\setstretch{1.2}
+	\setlength{\parindent}{0pt}
+	\raggedbottom
+	\usepackage[none]{hyphenat}    % no sillabazione 
+	\usepackage{multicol}          % testo su più colonne
+	\usepackage{changepage, float}	       % \begin{adjustwidth}{}{}
+		
+		% Matematica
+		\usepackage{amsmath, amssymb, amsthm, mathtools}
+		\usepackage{cancel}            % semplificazioni \cancel{expression}
+		\newtheorem*{thm}{Teorema}
+		\newtheorem*{en}{Enunciato}
+		\newtheorem*{definizione}{Definizione}
+		\newtheorem*{cor}{Corollario}
+		\DeclareMathOperator{\rk}{rk}
+		\DeclareMathOperator{\im}{Im}
+		
+		% Simboli e Disegni
+		\usepackage{color}             % \textcolor{'ColorCode'}{'testo'}
+		\usepackage{graphicx, wrapfig}
+		\usepackage{tikz, circuitikz}
+		\usetikzlibrary{patterns, arrows, decorations.markings, arrows.meta, decorations.text}
+		\tikzset{immagine/.style={above right, inner sep=0pt, outer sep=0pt},
+			testo/.style={fill=white, align=center, fill opacity=0.6, text opacity=1, below, font=\sffamily\bfseries\footnotesize}}
+		\usepackage{pgfplots}
+		\pgfplotsset{compat=1.15}
+		\usepackage{mathrsfs}
+		
+		% Altri pacchetti
+		\usepackage{enumitem}
+		\usepackage{mdwlist} 	       % suspend enumerate \suspend{} \resume{}
+		\usepackage{siunitx}
+		\usepackage{hyperref}
+		\hypersetup{
+			colorlinks=true,
+			linkcolor=blue,    
+			urlcolor=blue,
+		}
+		\urlstyle{same}
+		
+		% Altre definizioni personali
+		\usepackage{pifont}
+		\newcommand{\cmark}{\ding{51}}
+		\newcommand{\xmark}{\ding{55}}
+		\DeclareUnicodeCharacter{20AC}{\EUR}
+		\newcommand{\compresslist}{\setlength{\itemsep}{1pt}\setlength{\parskip}{0pt}\setlength{\parsep}{0pt}}
+		\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}} % stretcho le tabelle e gli array \ra{x}
+		\setlength{\jot}{10pt}
+		
+		
+		% Titolo e data
+		\title{De Saint Venant}
+		\date{}
+		
+		\begin{document}
+			\maketitle
+			\setcounterpageref{secnumdepth}{0}
+			\setcounter{tocdepth}{5}  % Includo nel TOC anche i subsubpar	
+			\tableofcontents 
+			\newpage
+			
+\input{Parte 2_FM}	
+\newpage		
+\input{Parte 3_FM}			
+\input{Parte 4_FM}
+\input{Parte 5_FM}
+\newpage
+\input{Parte 6_FM}				
+		\end{document}
